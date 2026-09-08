@@ -1,6 +1,7 @@
-# SD Gov Mipe 26 - 山东省住建厅系统密评管理平台
+# 山东省住建厅系统密评管理平台
 
 **上线主域名**：https://sd-gov-mipe-26.softwarelink.net/
+
 **项目仓库**：https://github.com/softwarelink-net/sd-gov-mipe-26
 
 ![控制台预览](docs/assets/dashboard-preview.png)
