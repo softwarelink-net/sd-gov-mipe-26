@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sd-gov-mipe-26.softwarelink.net/sitemap.xml

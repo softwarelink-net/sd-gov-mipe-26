@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sec-950: #0f172a;
+  --color-sec-500: #06b6d4;
+  --banner-height: 2.5rem;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans SC', system-ui, sans-serif;
+  color: #0f172a;
+  background: #f1f5f9;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-sec-700 px-4 py-2 text-sm font-medium text-white transition hover:bg-sec-600 focus:outline-none focus:ring-2 focus:ring-sec-400 focus:ring-offset-2 disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-sec-400 focus:ring-offset-2;
+  }
+
+  .input-field {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:border-sec-500 focus:outline-none focus:ring-2 focus:ring-sec-200;
+  }
+
+  .card-panel {
+    @apply rounded-lg border border-slate-200/80 bg-white shadow-panel;
+  }
+}
+
+.page-enter-active {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+@media print {
+  .sticky-top-banner,
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+  .pt-10 {
+    padding-top: 0 !important;
+  }
+  .lg\:pl-64 {
+    padding-left: 0 !important;
+  }
+}
